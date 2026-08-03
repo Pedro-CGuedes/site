@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para assinatura</title>
+</head>
+<body>
+    
+<header>
+    
+    <h1>Cadastro de professor</h1>
+
+</header>
+
+<br>
+
+<section>
+
+<h2>Faça seu cadastro abaixo</h2>
+
+</section>
+
+<form id="form" name="form">
+
+       <!-- Nome -->
+
+        <div>
+                <label for="nome"> Nome: </label>
+                <input type="text" id="nome" name="nome" required> <br>
+
+        </div>
+
+
+        <!-- E-mail -->
+
+        <div>
+                <label for="email"> E-mail: </label>
+                <input type="email" id="email" name="email" required> <br>
+
+        </div>
+
+        <!--Idade-->
+
+        <div>
+
+                <label for="idade"> Idade: </label>
+                <input type="number" id="idade" name="idade" min="18" required> <br>
+
+        </div>
+
+        <!--Matéria-->
+
+        <div>
+                <label for="assunto"> Matéria:</label>
+                <select name="assunto" id="assunto" required>
+                    <option value="">Selecione</option>
+                    <option value="matematica">Matemática</option>
+                    <option value="portugues">Português</option>
+                    <option value="biologia">Biologia</option>
+                    <option value="ciencias">Ciências</option>
+                    <option value="historia">História</option>
+                    <option value="geografia">Geografia</option>
+                    <option value="artes">Artes</option>
+
+                </select>
+
+        </div>
+
+        <!--Escolaridade-->
+
+        <div>
+
+            <fieldset>
+
+                <legend>Nível de escolaridade</legend>
+
+        <div>
+
+            <input type="radio" id="superior" name="escolaridade" value="Ensino Superior Completo" required>
+            <label for="superior">Ensino Superior Completo</label>
+
+        </div>
+
+
+         <div>
+
+            <input type="radio" id="mestrado-cursando" name="escolaridade" value="Cursando Mestrado">
+            <label for="mestrado-cursando">Cursando Mestrado</label>
+
+        </div>
+
+
+         <div>
+
+            <input type="radio" id="mestrado" name="escolaridade" value="Mestrado completo">
+            <label for="mestrado">Mestrado completo</label>
+
+        </div>
+
+
+         <div>
+
+            <input type="radio" id="doutorado-cursando" name="escolaridade" value="Cursando Doutorado">
+            <label for="doutorado-cursando">Cursando Doutorado</label>
+
+        </div>
+
+          <div>
+
+            <input type="radio" id="doutorado" name="escolaridade" value="Doutorado completo">
+            <label for="doutorado">Doutorado Completo</label>
+
+        </div>
+
+
+            </fieldset>
+
+       <!--Turnos-->
+
+        <div>
+
+            <fieldset>
+
+                <legend>Turnos disponíveis</legend>
+
+        <div>
+
+            <input type="checkbox" id="manha" name="turnos disponíveis" value="Manhã">
+            <label for="manha">Manhã</label>
+
+        </div>
+
+
+         <div>
+
+            <input type="checkbox" id="tarde" name="turnos disponíveis" value="Tarde">
+            <label for="tarde">Tarde</label>
+
+        </div>
+
+
+         <div>
+
+            <input type="checkbox" id="noite" name="turnos disponíveis" value="Noite">
+            <label for="noite">Noite</label>
+
+        </div>
+
+
+            </fieldset>
+
+
+        </div>
+
+        <!--Descrição-->
+
+                <label for="descricao"> Escreva uma breve descrição sobre você:</label>
+
+                <textarea name="descrição" id="descricao" cols="40" rows="5" ></textarea>
+
+                <br>
+
+                <input type="submit" value="Enviar">
+
+
+</form>
+
+</body>
+</html>
